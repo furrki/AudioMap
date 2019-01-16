@@ -24,8 +24,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ilK-vP-spa">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="JNQ-Fz-VNn">
-                                        <rect key="frame" x="28" y="138" width="318" height="392"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WYc-jA-aNe">
+                                        <rect key="frame" x="28.5" y="138" width="318" height="374"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldg-Xh-hGy" customClass="DotGraphView" customModule="AudioMap" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="318" height="320"/>
@@ -80,10 +80,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G7d-UW-beL" userLabel="Buttons">
-                                                <rect key="frame" x="0.0" y="341" width="318" height="51"/>
+                                                <rect key="frame" x="0.0" y="341" width="318" height="31"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDt-o6-hnG" customClass="LightButton" customModule="AudioMap" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="51"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="31"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="90" id="ii7-lf-zDr"/>
@@ -97,7 +97,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qib-9l-slV" customClass="LightButton" customModule="AudioMap" customModuleProvider="target">
-                                                        <rect key="frame" x="114" y="0.0" width="90" height="51"/>
+                                                        <rect key="frame" x="114" y="0.0" width="90" height="31"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="90" id="MkI-by-Iyk"/>
@@ -111,7 +111,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQO-3e-ybR" customClass="LightButton" customModule="AudioMap" customModuleProvider="target">
-                                                        <rect key="frame" x="230" y="0.0" width="89" height="51"/>
+                                                        <rect key="frame" x="230" y="0.0" width="88" height="31"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                                         <state key="normal" title="Reset">
@@ -128,7 +128,7 @@
                                                     <constraint firstItem="Qib-9l-slV" firstAttribute="leading" secondItem="gDt-o6-hnG" secondAttribute="trailing" constant="24" id="9rG-gW-7mB"/>
                                                     <constraint firstItem="CQO-3e-ybR" firstAttribute="leading" secondItem="Qib-9l-slV" secondAttribute="trailing" constant="26" id="Bti-dl-e7a"/>
                                                     <constraint firstItem="Qib-9l-slV" firstAttribute="centerX" secondItem="G7d-UW-beL" secondAttribute="centerX" id="KRu-6z-pGT"/>
-                                                    <constraint firstAttribute="trailing" secondItem="CQO-3e-ybR" secondAttribute="trailing" constant="-1" id="RVh-d8-HEx"/>
+                                                    <constraint firstAttribute="trailing" secondItem="CQO-3e-ybR" secondAttribute="trailing" id="RVh-d8-HEx"/>
                                                     <constraint firstItem="gDt-o6-hnG" firstAttribute="leading" secondItem="G7d-UW-beL" secondAttribute="leading" id="SdO-HB-rGX"/>
                                                     <constraint firstAttribute="bottom" secondItem="gDt-o6-hnG" secondAttribute="bottom" id="U28-NK-Zjb"/>
                                                     <constraint firstItem="Qib-9l-slV" firstAttribute="baseline" secondItem="CQO-3e-ybR" secondAttribute="firstBaseline" id="fCB-4p-sXn"/>
@@ -138,12 +138,19 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="G7d-UW-beL" firstAttribute="top" secondItem="JNQ-Fz-VNn" secondAttribute="top" constant="341" id="R5E-P4-pNK"/>
+                                            <constraint firstItem="ldg-Xh-hGy" firstAttribute="leading" secondItem="WYc-jA-aNe" secondAttribute="leading" id="5iQ-l0-qtv"/>
+                                            <constraint firstItem="G7d-UW-beL" firstAttribute="top" secondItem="ldg-Xh-hGy" secondAttribute="bottom" constant="21" id="KMQ-lY-bSY"/>
+                                            <constraint firstAttribute="trailing" secondItem="ldg-Xh-hGy" secondAttribute="trailing" id="Tp4-fp-ttj"/>
+                                            <constraint firstItem="ldg-Xh-hGy" firstAttribute="top" secondItem="WYc-jA-aNe" secondAttribute="top" id="bgV-U9-svJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="G7d-UW-beL" secondAttribute="bottom" constant="2" id="eu4-x0-C77"/>
+                                            <constraint firstItem="ldg-Xh-hGy" firstAttribute="leading" secondItem="G7d-UW-beL" secondAttribute="leading" id="oWk-JA-Ylw"/>
+                                            <constraint firstItem="ldg-Xh-hGy" firstAttribute="trailing" secondItem="G7d-UW-beL" secondAttribute="trailing" id="ug5-p7-pq7"/>
                                         </constraints>
-                                    </stackView>
+                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audio Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nZ-RZ-uYQ">
-                                        <rect key="frame" x="132.5" y="61" width="110.5" height="27.5"/>
+                                        <rect key="frame" x="132" y="61" width="111" height="28"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -151,11 +158,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.45780149647887325" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="JNQ-Fz-VNn" firstAttribute="centerX" secondItem="ilK-vP-spa" secondAttribute="centerX" id="43f-W1-zuk"/>
+                                    <constraint firstItem="WYc-jA-aNe" firstAttribute="top" secondItem="9nZ-RZ-uYQ" secondAttribute="bottom" constant="49" id="L4Q-HB-B9w"/>
                                     <constraint firstItem="9nZ-RZ-uYQ" firstAttribute="top" secondItem="ilK-vP-spa" secondAttribute="top" constant="61" id="NXk-O2-jUE"/>
-                                    <constraint firstItem="JNQ-Fz-VNn" firstAttribute="top" secondItem="9nZ-RZ-uYQ" secondAttribute="bottom" constant="49" id="TyM-5h-jO4"/>
                                     <constraint firstItem="9nZ-RZ-uYQ" firstAttribute="centerX" secondItem="ilK-vP-spa" secondAttribute="centerX" id="XUj-Bb-QB4"/>
-                                    <constraint firstItem="JNQ-Fz-VNn" firstAttribute="centerY" secondItem="ilK-vP-spa" secondAttribute="centerY" id="zlI-q5-tFU"/>
+                                    <constraint firstItem="WYc-jA-aNe" firstAttribute="centerX" secondItem="9nZ-RZ-uYQ" secondAttribute="centerX" id="Xdx-cp-T8l"/>
+                                    <constraint firstAttribute="bottom" secondItem="WYc-jA-aNe" secondAttribute="bottom" constant="155" id="fYg-7z-Vsw"/>
                                 </constraints>
                             </view>
                         </subviews>
