@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E37244A1F6A5B280181D1E0 /* Pods_AudioMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A0C5E4CF06758AEA658A61 /* Pods_AudioMapTests.framework */; };
+		4307BC11221C280900DE12F7 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4307BC10221C280800DE12F7 /* bg.jpg */; };
 		840E2FE421EF2FFA007FA29C /* CircledDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E2FE321EF2FFA007FA29C /* CircledDotView.swift */; };
 		84208C1E21EE85CF0014D1A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84208C1D21EE85CF0014D1A1 /* AppDelegate.swift */; };
 		84208C2021EE85CF0014D1A1 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84208C1F21EE85CF0014D1A1 /* MainVC.swift */; };
@@ -19,7 +20,6 @@
 		84208C4D21EE86100014D1A1 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84208C4C21EE86100014D1A1 /* AudioEngine.swift */; };
 		84208C4E21EE86100014D1A1 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84208C4C21EE86100014D1A1 /* AudioEngine.swift */; };
 		84208C4F21EE86100014D1A1 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84208C4C21EE86100014D1A1 /* AudioEngine.swift */; };
-		84208C5621EE89DB0014D1A1 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84208C5521EE89DB0014D1A1 /* bg.jpg */; };
 		84515E9121EE912D005F6236 /* LightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84515E9021EE912D005F6236 /* LightButton.swift */; };
 		84515E9221EE912D005F6236 /* LightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84515E9021EE912D005F6236 /* LightButton.swift */; };
 		84515E9321EE912D005F6236 /* LightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84515E9021EE912D005F6236 /* LightButton.swift */; };
@@ -47,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		0330F13E79313049C449B6E6 /* Pods-AudioMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioMap.debug.xcconfig"; path = "Target Support Files/Pods-AudioMap/Pods-AudioMap.debug.xcconfig"; sourceTree = "<group>"; };
+		4307BC10221C280800DE12F7 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg.jpg; path = ../../../bg.jpg; sourceTree = "<group>"; };
 		4358602335EF40298099BBC3 /* Pods-AudioMapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioMapUITests.release.xcconfig"; path = "Target Support Files/Pods-AudioMapUITests/Pods-AudioMapUITests.release.xcconfig"; sourceTree = "<group>"; };
 		51A0C5E4CF06758AEA658A61 /* Pods_AudioMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFBE342E722FF472D610395 /* Pods_AudioMapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioMapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +66,6 @@
 		84208C3D21EE85D20014D1A1 /* AudioMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioMapUITests.swift; sourceTree = "<group>"; };
 		84208C3F21EE85D20014D1A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84208C4C21EE86100014D1A1 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
-		84208C5521EE89DB0014D1A1 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg.jpg; path = "../../../../../../Volumes/VMware Shared Folders/To Mac/bg.jpg"; sourceTree = "<group>"; };
 		84515E9021EE912D005F6236 /* LightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightButton.swift; sourceTree = "<group>"; };
 		846A40C121EE9F6200074911 /* DotGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotGraphView.swift; sourceTree = "<group>"; };
 		B0FBA0FC96A4465D640769D2 /* Pods-AudioMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioMapTests.release.xcconfig"; path = "Target Support Files/Pods-AudioMapTests/Pods-AudioMapTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -198,7 +198,7 @@
 		84208C5221EE882E0014D1A1 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				84208C5521EE89DB0014D1A1 /* bg.jpg */,
+				4307BC10221C280800DE12F7 /* bg.jpg */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -323,7 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84208C5621EE89DB0014D1A1 /* bg.jpg in Resources */,
+				4307BC11221C280900DE12F7 /* bg.jpg in Resources */,
 				84208C2821EE85D20014D1A1 /* LaunchScreen.storyboard in Resources */,
 				84208C2521EE85D20014D1A1 /* Assets.xcassets in Resources */,
 				84208C2321EE85CF0014D1A1 /* Main.storyboard in Resources */,

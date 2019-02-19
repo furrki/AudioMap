@@ -16,8 +16,10 @@ class DotGraphView: UIView {
     var w = 200.0
     var h = 200.0
     
-    let maxFreq = 1200.0
-    let maxAmp = 0.8
+    let maxFreq = 1661.0
+    let maxAmp = 0.3
+    let minFreq = 55.0
+    let minAmp = 0.055
 
     var xPadding: Double {
         get {
@@ -47,9 +49,13 @@ class DotGraphView: UIView {
     }
     
     func add(freq: Double, amp: Double){
+        
+        print(amp, freq)
+        if freq < minFreq || amp < minAmp || freq > maxFreq || amp > maxAmp {
+            return
+        }
         amps.append(amp)
         freqs.append(freq)
-        print(amp, freq)
         let circle = CircledDotView()
         circle.frame = CGRect(x: freq * (w / maxFreq) + xPadding, y: amp * (h / maxAmp) + yPadding, width: 3, height: 3)
         
